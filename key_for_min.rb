@@ -3,7 +3,6 @@
 
 def key_for_min_value(name_hash)
   currentloweset = 9999999999999999999999
-  lowestkey = ""
   name_hash.each do |key, value|
   if value < currentloweset
     currentlowest = value
