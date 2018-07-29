@@ -3,7 +3,11 @@
 
 def key_for_min_value(name_hash)
   answer = ""
-  currentloweset = name_hash
+  currentloweset = name_hash.values[0]
   name_hash.each do |key, value|
-  if    
+  if value < currentloweset
+    currentlowest = value
+    lowestkey = key
+  end
+  return lowestkey
 end
